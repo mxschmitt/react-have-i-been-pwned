@@ -1,6 +1,6 @@
 {
   "name": "react-have-i-been-pwned",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Have I been pwned? react registration component",
   "main": "index.js",
   "repository": "https://github.com/mxschmitt/react-have-i-been-pwned",
