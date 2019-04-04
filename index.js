@@ -41,7 +41,21 @@ export default class HIBPPasswordChecker extends Component {
       pwned: false,
       error: null
     })
-    pwnedPasswordRange(prefix)
+
+    fetch(`https://api.pwnedpasswords.com/range/${prefix}`, {
+      headers: {
+        Accept: "application/vnd.haveibeenpwned.v2+json"
+      }
+    })
+      .then(resp => resp.ok ? resp.text() : Promise.reject(resp.text()))
+      .then(resp => resp.split('\n')
+        .map(entry => {
+          const [suffix, count] = entry.split(":")
+          return {
+            suffix,
+            count: parseInt(count, 10)
+          }
+        }))
       .then(results => {
         const result = results.find(result => result.suffix === suffix)
         this.setState({

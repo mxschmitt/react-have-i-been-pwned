@@ -9,6 +9,7 @@
 - Use your own styles
 - Adjust the entire look by using the render prop
 - Increase the security by informing the users of their unsecure passwords
+- Lightweight implementation using the Fetch API
 
 ## Example
 
