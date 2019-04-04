@@ -32,7 +32,7 @@ There is also an interactive example available on [codesandbox](https://codesand
     return (
         <>
         <strong>This password isn't safe to use</strong> and
-        appeared in {count} data breaches. You can still use it, but
+        appeared in {count.toLocaleString()} data breaches. You can still use it, but
         you probably shouldn't.{' '}
         <a
             href="https://haveibeenpwned.com/FAQs#DataSource"

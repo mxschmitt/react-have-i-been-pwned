@@ -21,7 +21,12 @@ export default class HIBPPasswordChecker extends Component {
         initial: true
       })
     } else if (nextProps.password !== this.props.password) {
-      this.checkPassword(nextProps.password)
+      if (this.interval) {
+        clearInterval(this.interval)
+      }
+      this.interval = setTimeout(() => {
+        this.checkPassword(nextProps.password)
+      }, 200)
     }
   }
   checkPassword(password) {
