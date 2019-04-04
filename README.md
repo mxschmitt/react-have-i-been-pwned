@@ -1,6 +1,10 @@
-# react have i been pwned component
+# React Have I Been Pwned
+
+> React component which validates a password on the client side by the [Have I Been Pwned API](https://haveibeenpwned.com) by Troy Hunt.
 
 ## Example
+
+There is also an interactive example available on [codesandbox](https://codesandbox.io/s/myo149oxw8).
 
 ```jsx
 <HIBPPasswordChecker password={this.state.password}>
