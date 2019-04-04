@@ -1,6 +1,5 @@
 import sha1 from 'sha1'
 import React, { Component } from 'react'
-import { pwnedPasswordRange } from 'hibp'
 
 // https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange
 const HASH_PREFIX_LENGTH = 5
