@@ -1,5 +1,7 @@
 # React Have I Been Pwned
 
+[![npm](https://img.shields.io/npm/v/react-have-i-been-pwned.svg)](https://www.npmjs.com/package/react-have-i-been-pwned)
+
 > React component which validates a password on the client side by the [Have I Been Pwned API](https://haveibeenpwned.com) by Troy Hunt.
 
 ## Example
