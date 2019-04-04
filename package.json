@@ -1,0 +1,14 @@
+{
+  "name": "react-have-i-been-pwned",
+  "version": "1.0.0",
+  "description": "Have I been pwned registration form react component",
+  "main": "index.js",
+  "repository": "https://github.com/mxschmitt/react-have-i-been-pwned",
+  "author": "Max Schmitt <max@schmitt.mx>",
+  "license": "MIT",
+  "dependencies": {
+    "hibp": "^7.5.1",
+    "react": "^16.8.6",
+    "sha1": "^1.1.1"
+  }
+}
