@@ -11,11 +11,23 @@
 - Increase the security by informing the users of their unsecure passwords
 - Lightweight implementation using the Fetch API
 
+## Installation
+
+### NPM
+
+`npm install react-have-i-been-pwned`
+
+### Yarn
+
+`yarn add react-have-i-been-pwned`
+
 ## Example
 
 There is also an interactive example available on [codesandbox](https://codesandbox.io/s/myo149oxw8).
 
 ```jsx
+import HIBPPasswordChecker from 'react-have-i-been-pwned';
+
 <HIBPPasswordChecker password={this.state.password}>
 {({ initial, loading, error, pwned, count }) => {
     if (initial) return null;
